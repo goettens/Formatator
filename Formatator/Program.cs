@@ -12,15 +12,14 @@ namespace Formatator
             try
             {
                 Leitor leitor = new Leitor();
-                List<Log> logster = leitor.Escritor();
-                foreach(Log a in logster)
-                {
-                    Console.WriteLine(a);
-                }
             }
             catch(Exception e)
             {
                 Console.WriteLine(e);
+            }
+            finally
+            {
+                Console.WriteLine("Finalizado. Pressione qualquer tecla para sair.");
             }
             Console.Read();
         }
